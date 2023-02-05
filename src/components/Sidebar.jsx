@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { MdSpaceDashboard } from "react-icons/md";
 import { RiDashboard2Fill } from "react-icons/ri";
-import { FaAddressCard, FaTaxi } from "react-icons/fa";
+import { FaAddressCard } from "react-icons/fa";
 import avatarImage from "../assets/avatarImage.jpeg";
 import { GiTwirlCenter } from "react-icons/gi";
 import { BsFillChatTextFill } from "react-icons/bs";
@@ -69,7 +69,7 @@ export default function Sidebar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <a href="#">
+                <a href="/">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
                 </a>
@@ -78,7 +78,7 @@ export default function Sidebar() {
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <a href="#">
+                <a href="/">
                   <RiDashboard2Fill />
                   <span> Blogs</span>
                 </a>
@@ -87,7 +87,7 @@ export default function Sidebar() {
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
-                <a href="#">
+                <a href="/">
                   <FaAddressCard />
                   <span> GAMES</span>
                 </a>
@@ -97,7 +97,7 @@ export default function Sidebar() {
                 onClick={() => setCurrentLink(4)}
               >
       
-                <a href="#">
+                <a href="/">
                   <BsFillChatTextFill />
                   <span> Socials</span>
                 </a>
@@ -106,7 +106,7 @@ export default function Sidebar() {
                 className={currentLink === 6 ? "active" : "none"}
                 onClick={() => setCurrentLink(6)}
               >
-                <a href="#">
+                <a href="/">
                   <IoSettings />
                   <span> Settings</span>
                 </a>
@@ -115,7 +115,7 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="logout">
-          <a href="#">
+          <a href="/">
             <FiLogOut />
             <span className="logout">Logout</span>
           </a>
@@ -128,7 +128,7 @@ export default function Sidebar() {
               className={currentLink === 1 ? "active" : "none"}
               onClick={() => setCurrentLink(1)}
             >
-              <a href="#">
+              <a href="/">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
               </a>
@@ -137,7 +137,7 @@ export default function Sidebar() {
               className={currentLink === 2 ? "active" : "none"}
               onClick={() => setCurrentLink(2)}
             >
-              <a href="#">
+              <a href="/">
                 <RiDashboard2Fill />
                 <span> Blogs</span>
               </a>
@@ -146,7 +146,7 @@ export default function Sidebar() {
               className={currentLink === 3 ? "active" : "none"}
               onClick={() => setCurrentLink(3)}
             >
-              <a href="#">
+              <a href="/">
                 <GiTwirlCenter />
                 <span>GAMES</span>
               </a>
@@ -155,7 +155,7 @@ export default function Sidebar() {
               className={currentLink === 5 ? "active" : "none"}
               onClick={() => setCurrentLink(5)}
             >
-              <a href="#">
+              <a href="/">
                 <BsFillChatTextFill />
                 <span>Socials</span>
               </a>
@@ -164,7 +164,7 @@ export default function Sidebar() {
               className={currentLink === 6 ? "active" : "none"}
               onClick={() => setCurrentLink(6)}
             >
-              <a href="#">
+              <a href="/">
                 <IoSettings />
                 <span> Settings</span>
               </a>
